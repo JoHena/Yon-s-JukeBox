@@ -17,7 +17,7 @@ export async function getSpotifyToken() {
 
 export async function getSpotifyAlbum(token) {
     try {
-        const data = await fetch('https://api.spotify.com/v1/albums/5o8angNlspr4TfgRskQvsN', {
+        const data = await fetch('https://api.spotify.com/v1/albums/7eVQUS48aCo0xfUPOlNVlT', {
             method: 'GET',
             headers: {
                 'Authorization' : `Bearer ${token}`
