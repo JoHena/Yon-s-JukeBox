@@ -8,15 +8,18 @@
 }
 
 body {
-    background-color:#010204;
+    background-color:#000000;
 }
 
 main {
     height: 100vh;
-    background:
-    linear-gradient(to bottom, hsla(0, 0%, 0%, 0.541), #010204),
-    url(/src/assets/nun.jpg);
     background-size: cover;
+}
+
+.grain {
+    background:
+    linear-gradient(to bottom, hsla(0, 10%, 13%, 0.621), hsla(206, 78%, 4%, 0.983) 55%, hsla(200, 100%, 1%, 0.983)),
+    url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
 /* Album */
