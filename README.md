@@ -1,7 +1,23 @@
-# Vue 3 + Vite
+## What is Yon's Jukebox?
+This is a little Jukebox web app utilizing vue.js and the Spotify Api to give random album recommendations from my collection. 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Desktop view             |  Mobile view
+:-------------------------:|:-------------------------:
+![Desktop](https://github.com/JoHena/Yon-s-JukeBox/assets/80927773/12bd842c-9706-4cd3-b390-e76d0a3ff56b) | ![MobileBox](https://github.com/JoHena/Yon-s-JukeBox/assets/80927773/67d8adc7-022f-4f56-b64e-242826c6fa9b)
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+
+
+## Goals
+  - [X] Make a Modern and Smooth UI.
+  - [X] Responsive Design.
+  - [x] Connect to the Spotify API
+  - [x] Display each Albums information and its Tracks.
+  - [X] Dynamic background based on cover art.
+  - [ ] Random album selection.
+  - [ ] Dynamic Gradient Color based on lightest and darkest colors on Cover Art.
+  - [ ] Link to each artists Socials.
+  - [ ] Play Tracks inside the app.
+  - [ ] Make a Progress Bar for the track being played.
+  - [ ] Music video of the most popular song on the album.
+ 
