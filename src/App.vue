@@ -4,6 +4,7 @@
   import ListenButton from './components/Buttons/ListenButton.vue';
   import ShareButton from './components/Buttons/ShareButton.vue';
   import SideMenu from './components/SideMenu.vue';
+  import Footer from './components/Footer.vue';
   import { onMounted, reactive, ref } from 'vue'
   import { getSpotifyToken, getSpotifyAlbum } from './api/api'
 
@@ -31,17 +32,17 @@
     <SideMenu />
     
     <div class="flex flex-col items-center w-full backdrop-blur-sm grain">
-      <div class="flex flex-col items-center w-[60%] pt-[10%] gap-20">
+      <div class="flex flex-col items-center w-full xl:w-[60%] gap-20">
 
 
-        <section class="flex gap-[7%] w-full text-white">
-          <div class="flex gap-2">
+        <section class="flex gap-8 xl:gap-[7%] w-full text-white flex-wrap justify-center items-center xl:justify-start pt-[10%]">
+          <div class="flex flex-wrap-reverse gap-2 px-12">
             <div class="flex gap-3 font-medium text-[#4d5877] album-release italic">{{ album.name }}<div class="flex gap-3 text-white"><span>—</span> {{ album.release_date }}</div></div>
-            <img v-bind:src="album.images[0].url" class="box-img" />
+            <img v-bind:src="album.images[0].url" class="box-img w-[400px]" />
           </div>
           <div class="flex flex-col self-center">
-            <h1 class="text-6xl bg-white album-name bg-clip-text">{{ album.name }}</h1>
-            <p class="text-3xl font-bold tracking-tight">{{ album.artists[0].name }}</p>
+            <h1 class="text-3xl bg-white md:text-5xl album-name bg-clip-text">{{ album.name }}</h1>
+            <p class="text-2xl font-bold tracking-tight md:text-3xl">{{ album.artists[0].name }}</p>
   
             <div class="flex items-center gap-2 mt-10 font-semibold text-white">
               <ListenButton />
@@ -50,42 +51,24 @@
           </div>
         </section>
 
-        <section class="flex flex-col w-full gap-5 text-white">
-          <h2 class="text-5xl font-bold tracking-wide text-white">STREAM IT YOUR WAY</h2>
+        <section class="flex flex-col w-full gap-5 px-[5%] text-white">
+          <h2 class="text-3xl font-bold tracking-wide text-white md:text-5xl w-fit">STREAM IT YOUR WAY</h2>
           <Streamer />
         </section>
 
-        <section class="flex flex-col w-full gap-16 text-white">
-          <h3 class="text-5xl font-bold tracking-wide text-white">TRACK LIST</h3>
+        <section class="flex flex-col w-full gap-16 text-white px-[5%]">
+          <h3 class="text-3xl font-bold tracking-wide text-white md:text-5xl">TRACK LIST</h3>
           <ol class="flex flex-col w-full gap-6 list-decimal list-inside">
             <Player v-for="track in album.tracks.items" :song="track.name" :author="track.artists[0].name" />
           </ol>
         </section>
 
         <section class="flex flex-col w-full text-white gap-14">
-          <h4 class="text-5xl font-bold tracking-wide text-white">Music Video</h4>
-          <iframe class="w-full h-[657px]" src="https://www.youtube.com/embed/5LlhBfF5EUQ?si=gyx9I9GAttTX3keN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4 class="text-3xl md:text-5xl font-bold tracking-wide text-white px-[5%]">Music Video</h4>
+          <iframe class="w-full h-[300px] md:h-[657px]" src="https://www.youtube.com/embed/5LlhBfF5EUQ?si=gyx9I9GAttTX3keN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <footer class="w-full text-xl text-white">
-          <div class="grid items-start justify-between grid-cols-3 py-10 font-extrabold tracking-wider text-white border-y">
-            <div class="flex flex-col">
-              <div>ABOUT</div>
-              <div>CONTACT ME</div>
-              <div>NEWS</div>
-            </div>
-            <div>
-              <div>TERMS OF SERVICE</div>
-              <div>PRIVACY POLICY</div>
-            </div>
-            <div>
-              <div>Music News letter</div>
-              <p class="text-lg italic text-gray-500">Don't miss a thing, stay up to date with the latest news from us.</p>
-            </div>
-          </div>
-
-          <div class="py-6 italic">2024 - John M. </div>
-        </footer>
+        <Footer />
 
       </div>
     </div>

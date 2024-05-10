@@ -12,8 +12,9 @@ defineProps<PlayerProps>()
 </script>
 
 <template>
-    <li class="flex items-center w-full font-bold border-r border-white">
-            <div class="flex items-center w-5/6 gap-5">
+    <li class="flex items-center w-full font-bold border-white md:border-r">
+        <div class="flex items-center flex-grow gap-5">
+                <audio src="" />
                 <Play class="transition-colors h-fit hover:text-white" />
             <div>
                 <div>{{song}}</div>
@@ -21,11 +22,11 @@ defineProps<PlayerProps>()
             </div>
         </div>
 
-        <div class="w-1/12">
+        <div class="flex-grow-0 w-1/12">
             3:00
         </div>
 
-        <div class="w-1/12">
+        <div class="flex-grow-0 w-1/12 ml-4">
             <Share />
         </div>
     </li>

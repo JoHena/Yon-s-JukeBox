@@ -27,18 +27,26 @@ main {
     font-family: creepy;
 }
 
-.album-release {
-    width: fit-content;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    transform: scale(-1, -1);
+@media (width <= 768px) {
+    .album-release {
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+    }
+}
+
+@media (width >= 768px) {
+    .album-release {
+        width: fit-content;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        transform: scale(-1, -1);
+    }
 }
 
 .box-img {
     aspect-ratio: 1 / 1; 
     border-width: 1px; 
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
-    width: 460px;
     border-color: #000000a8;
 }
 
