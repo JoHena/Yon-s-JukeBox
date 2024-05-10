@@ -3,8 +3,7 @@ This is a little Jukebox web app utilizing vue.js and the Spotify Api to give ra
 
 Desktop view             |  Mobile view
 :-------------------------:|:-------------------------:
-![Desktop](https://github.com/JoHena/Yon-s-JukeBox/assets/80927773/12bd842c-9706-4cd3-b390-e76d0a3ff56b) | ![MobileBox](https://github.com/JoHena/Yon-s-JukeBox/assets/80927773/67d8adc7-022f-4f56-b64e-242826c6fa9b)
-
+![Desktop](https://github.com/JoHena/Yon-s-JukeBox/assets/80927773/12bd842c-9706-4cd3-b390-e76d0a3ff56b) | ![MobileBox](https://github.com/JoHena/Yon-s-JukeBox/assets/80927773/5655eb94-6615-41c4-99de-0f81d396def4)
 
 
 
