@@ -13,10 +13,11 @@ Desktop view             |  Mobile view
   - [x] Connect to the Spotify API
   - [x] Display each Albums information and its Tracks.
   - [X] Dynamic background based on cover art.
-  - [ ] Random album selection.
-  - [ ] Dynamic Gradient Color based on lightest and darkest colors on Cover Art.
+  - [X] Random album selection.
+  - [ ] Song ratings.
+  - [ ] Dynamic Gradient Color based on Cover Art.
   - [ ] Link to each artists Socials.
-  - [ ] Play Tracks inside the app.
+  - [ ] Play Tracks.
   - [ ] Make a Progress Bar for the track being played.
   - [ ] Music video of the most popular song on the album.
  
