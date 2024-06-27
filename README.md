@@ -1,5 +1,5 @@
 ## What is Yon's Jukebox?
-A little Jukebox web app utilizing vue.js and the Spotify Api to give random album recommendations from my collection. 
+A Jukebox web app utilizing vue.js and the Spotify Api to give random album recommendations from my collection, users can also rate each album. 
 
 Desktop view             |  Mobile view
 :-------------------------:|:-------------------------:
